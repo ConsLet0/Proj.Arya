@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('response', function (Blueprint $table) {
+        Schema::create('year_experiences', function (Blueprint $table) {
             $table->id();
-            $table->string('answer');
+            $table->string('experience_range');
             $table->timestamps();
         });
     }
@@ -23,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_respones');
+        Schema::dropIfExists('year_experiences');
     }
 };
