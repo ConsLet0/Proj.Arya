@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Specialization extends Model
 {
     use HasFactory;
+
+    public function jobs(){
+        return $this->belongsToMany(Job::class, 'job_specialization', 'specialization_id', 'job_id');
+    }
 }

@@ -13,6 +13,10 @@ class User extends Model
     //     'name', 'birthdate', 'education_qualification', 'major', 'year_experience', 'languages', 'primary_language', 'specialization_1', 'specialization_2', 'specialization_3', 'specialization_4', 'preferred_working_hours', 'desired_field'
     // ];
 
+    public function jobs(){
+        return $this->belongsToMany(Job::class);
+    }
+
     public function specialization(){
         return $this->hasMany(Specialization::class);
     }

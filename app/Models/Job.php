@@ -9,7 +9,7 @@ class Job extends Model
 {
     use HasFactory;
 
-    public function specializations() {
-        return $this->belongsToMany(Specialization::class);
+    public function specializations(){
+        return $this->belongsToMany(Specialization::class, 'job_specialization', 'job_id', 'specialization_id');
     }
 }

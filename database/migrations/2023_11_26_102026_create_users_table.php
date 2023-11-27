@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('birthdate');
             $table->unsignedBigInteger('education_qualification');
             $table->unsignedBigInteger('major');
-            $table->unsignedBigInteger('year_experience')->nullable();
+            $table->unsignedBigInteger('year_experience');
             $table->unsignedBigInteger('languages');
             $table->unsignedBigInteger('primary_language');
             $table->unsignedBigInteger('specialization_1');

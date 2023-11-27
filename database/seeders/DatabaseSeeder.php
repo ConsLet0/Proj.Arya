@@ -17,7 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call(Languages::class);
         $this->call(Majors::class);
         $this->call(Qualifications::class);
+        $this->call(Jobs::class);
         $this->call(Specializations::class);
+        // $this->call(JobSpecialization::class);
         $this->call(WorkingHours::class);
     }
 }
