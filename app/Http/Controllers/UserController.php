@@ -16,11 +16,6 @@ class UserController extends Controller
         $user->birthdate = $birthdate;
         $user->education_qualification = $request->input('education_qualification');
         $user->major = $request->input('major');
-
-        // $specializationIds = $request->input('specializations');
-        // $specializations = Specialization::find($specializationIds);
-        // $user->specializations()->saveMany($specializations);
-
         $user->year_experience = $request->input('year_experience');
         $user->languages = $request->input('languages');
         $user->primary_language = $request->input('primary_language');
