@@ -29,8 +29,7 @@ class UserController extends Controller
     
         $user = new User();
         $user->name = $request->input('name');
-        $birthdate = \Carbon\Carbon::createFromFormat('d/m/Y', $request->input('birthdate'))->format('Y-m-d');
-        $user->birthdate = $birthdate;
+        $user->birthdate = $request->input('birthdate');
         $user->education_qualification = $request->input('education_qualification');
         $user->major = $request->input('major');
         $user->year_experience = $request->input('year_experience');
@@ -43,8 +42,10 @@ class UserController extends Controller
         $user->preferred_working_hours = $request->input('preferred_working_hours');
         $user->desired_field = $request->input('desired_field');
         $user->save();
+        // dd($user);
     
         $matchedJobNames = $matchingJobs->pluck('name')->implode(', ');
+        dd($matchingJobs);
 
         return view('output', ['matchedJobs' => $matchingJobs]);
     }

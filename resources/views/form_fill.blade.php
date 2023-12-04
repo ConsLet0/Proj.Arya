@@ -27,7 +27,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="birthdate" class="form-label mb-0">Date Of Birth</label>
-                        <input type="text" id="birthdate" name="birthdate" class="form-control border-0" id="exampleInputEmail2" placeholder="Birthdate (dd/mm/yyyy)"/>
+                        <input type="date" id="birthdate" name="birthdate" class="form-control border-0" id="exampleInputEmail2" placeholder="Birthdate (dd/mm/yyyy)"/>
                     </div>
                     <div class="mb-4">
                         <label for="education_qualification" class="form-label mb-0">Education Qualification</label>
