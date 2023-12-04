@@ -19,11 +19,11 @@ class UserController extends Controller
             $request->input('specialization_4'),
         ];
     
-        $matchingJobs = Job::select('jobs.name')
+        $matchingJobs = Job::select('jobs.name', 'jobs.description', 'jobs.image')
         ->join('job_specialization', 'jobs.id', '=', 'job_specialization.job_id')
         ->join('specializations', 'job_specialization.specialization_id', '=', 'specializations.id')
         ->whereIn('specializations.id', $specializations)
-        ->groupBy('jobs.id', 'jobs.name')
+        ->groupBy('jobs.id', 'jobs.name', 'jobs.description', 'jobs.image')
         ->havingRaw('COUNT(DISTINCT specializations.id) = ' . count($specializations))
         ->get();
     
@@ -45,7 +45,7 @@ class UserController extends Controller
         // dd($user);
     
         $matchedJobNames = $matchingJobs->pluck('name')->implode(', ');
-        dd($matchingJobs);
+        // dd($matchingJobs);
 
         return view('output', ['matchedJobs' => $matchingJobs]);
     }
