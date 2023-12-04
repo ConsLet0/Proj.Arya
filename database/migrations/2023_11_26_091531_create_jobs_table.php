@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('jobs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('description', 1000);
+            $table->string('image');
             $table->timestamps();
         });
     }

@@ -15,6 +15,7 @@ use App\Http\Controllers\ViewController;
 |
 */
 
-Route::get('/testback', [ViewController::class, 'form'])->name('user.create');
+Route::get('/', [ViewController::class, 'home'])->name('user.home');
+Route::get('/form', [ViewController::class, 'form'])->name('user.create');
 Route::post('/users/store', [UserController::class, 'store'])->name('user.store');
 // Route::get('/output', [UserController::class, 'store']);

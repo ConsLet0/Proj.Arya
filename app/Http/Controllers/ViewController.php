@@ -14,6 +14,10 @@ use App\Models\EducationQualification;
 
 class ViewController extends Controller
 {
+    public function home(){
+        return view('homepage');
+    }
+
     public function form(){
         $education_qualifications = EducationQualification::all();
         $majors = Major::all();
@@ -23,6 +27,6 @@ class ViewController extends Controller
         $preferred_working_hours = WorkingHours::all();
         $desired_fields = Field::all();
         
-        return view('tester_backend', compact('education_qualifications', 'majors', 'year_experiences', 'languages', 'specializations', 'preferred_working_hours', 'desired_fields'));
+        return view('form_fill', compact('education_qualifications', 'majors', 'year_experiences', 'languages', 'specializations', 'preferred_working_hours', 'desired_fields'));
     }
 }

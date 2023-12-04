@@ -15,10 +15,19 @@ class Jobs extends Seeder
     public function run()
     {
         $jobs = [
-            ['name' => 'Data Analyst'],
-            ['name' => 'Digital Marketing'],
-            ['name' => 'Developer'],
-            ['name' => 'Machine Learning'],
+            ['name' => 'Data Analyst',
+            'description' => 'Data Analyst adalah seorang profesional yang memahami data dalam segala bentuknya dan menggunakan keterampilan analisis untuk menghasilkan wawasan yang berharga. Tugas utama seorang Data Analyst adalah mengumpulkan, membersihkan, dan menganalisis data untuk membantu organisasi membuat keputusan yang lebih baik.',
+            'image' => asset('../images/data-analyst.png')],
+            ['name' => 'Digital Marketing Specialist',
+            'description' => 'Seorang Digital Marketing Specialist adalah seorang profesional yang memiliki pengetahuan dan keahlian khusus dalam merancang, melaksanakan, dan mengelola strategi pemasaran digital untuk mencapai tujuan bisnis tertentu. Peran ini melibatkan berbagai tugas yang mencakup berbagai aspek pemasaran online, termasuk media sosial, SEO, konten, email, dan iklan berbayar.',
+            'image' => asset('../images/data-marketing.png')],
+            ['name' => 'Developer',
+            'description' => 'Istilah "developer" atau "pengembang" (dalam konteks teknologi informasi) merujuk kepada seseorang yang bertanggung jawab untuk merancang, mengembangkan, dan memelihara perangkat lunak atau aplikasi. Pekerjaan seorang pengembang dapat melibatkan berbagai jenis tugas, termasuk menulis kode program, merancang arsitektur perangkat lunak, menguji, dan memelihara sistem.',
+            'image' => asset('../images/developer.png')],
+            ['name' => 'Machine Learning Engineer',
+            'description' => '
+            Machine Learning Engineer adalah seorang profesional dalam bidang teknologi informasi yang memiliki keahlian khusus dalam pengembangan dan implementasi solusi berbasis machine learning (ML). Tugas utama seorang Machine Learning Engineer adalah merancang, mengembangkan, dan mengoptimalkan model-machine learning untuk memecahkan masalah tertentu atau meningkatkan kinerja suatu sistem.',
+            'image' => asset('../images/machine-learning-engineer.png')],
         ];
 
         Job::insert($jobs);
