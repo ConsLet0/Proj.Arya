@@ -27,7 +27,7 @@
                     </div>
                     <div class="mb-4">
                         <label for="birthdate" class="form-label mb-0">Date Of Birth</label>
-                        <input type="date" id="birthdate" name="birthdate" class="form-control border-0" id="exampleInputEmail2" />
+                        <input type="text" id="birthdate" name="birthdate" class="form-control border-0" id="exampleInputEmail2" placeholder="Birthdate (dd/mm/yyyy)"/>
                     </div>
                     <div class="mb-4">
                         <label for="education_qualification" class="form-label mb-0">Education Qualification</label>
@@ -44,6 +44,15 @@
                             <option value="#" disabled selected>Major</option>
                             @foreach ($majors as $major)
                             <option value="{{ $major->id }}">{{ $major->major }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="year_experience" class="form-label mb-0">Year Experience</label>
+                        <select class="form-control border-0" id="year_experience" name="year_experience">
+                            <option value="#" disabled selected>Major</option>
+                            @foreach ($year_experiences as $year_experience)
+                            <option value="{{ $year_experience->id }}">{{ $year_experience->experience_range }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -71,7 +80,7 @@
                     <div class="mb-4">
                         <label for="languages" class="form-label mb-0">Language</label>
                         <select class="form-control border-0" id="major" name="languages">
-                            <option value="#" disabled selected>languages</option>
+                            <option value="#" disabled selected>Language</option>
                             @foreach ($languages as $language)
                             <option value="{{ $language->id }}">{{ $language->language }}</option>
                             @endforeach
@@ -79,8 +88,8 @@
                     </div>
                     <div class="mb-4">
                         <label for="primary_language" class="form-label mb-0">Primary Language</label>
-                        <select class="form-control border-0" id="major" name="major">
-                            <option value="#" disabled selected>Primery Language</option>
+                        <select class="form-control border-0" id="primary_language" name="primary_language">
+                            <option value="#" disabled selected>Primary Language</option>
                             @foreach ($languages as $language)
                             <option value="{{ $language->id }}">{{ $language->language }}</option>
                             @endforeach
