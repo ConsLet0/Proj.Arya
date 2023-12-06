@@ -31,7 +31,7 @@
 <body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
     <nav class="navbar navbar-expand-lg bg-white navbar-light container-fluid py-3 position-fixed">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="{{asset('images/main-logo.png')}}" alt="logo" /></a>
+            <a class="navbar-brand" href="/"><img src="{{asset('images/main-logo.png')}}" alt="logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>

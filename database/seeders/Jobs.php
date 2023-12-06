@@ -25,9 +25,8 @@ class Jobs extends Seeder
             'description' => 'Istilah "developer" atau "pengembang" (dalam konteks teknologi informasi) merujuk kepada seseorang yang bertanggung jawab untuk merancang, mengembangkan, dan memelihara perangkat lunak atau aplikasi. Pekerjaan seorang pengembang dapat melibatkan berbagai jenis tugas, termasuk menulis kode program, merancang arsitektur perangkat lunak, menguji, dan memelihara sistem.',
             'image' => 'images/developer.png'],
             ['name' => 'Machine Learning Engineer',
-            'description' => '
-            Machine Learning Engineer adalah seorang profesional dalam bidang teknologi informasi yang memiliki keahlian khusus dalam pengembangan dan implementasi solusi berbasis machine learning (ML). Tugas utama seorang Machine Learning Engineer adalah merancang, mengembangkan, dan mengoptimalkan model-machine learning untuk memecahkan masalah tertentu atau meningkatkan kinerja suatu sistem.',
-            'image' => 'images/machine-learning-engineer.png'],
+            'description' => 'Machine Learning Engineer adalah seorang profesional dalam bidang teknologi informasi yang memiliki keahlian khusus dalam pengembangan dan implementasi solusi berbasis machine learning (ML). Tugas utama seorang Machine Learning Engineer adalah merancang, mengembangkan, dan mengoptimalkan model-machine learning untuk memecahkan masalah tertentu atau meningkatkan kinerja suatu sistem.',
+            'image' => 'images/machine-learning-engineer.png',],
         ];
 
         Job::insert($jobs);
