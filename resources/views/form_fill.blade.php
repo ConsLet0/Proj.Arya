@@ -34,7 +34,7 @@
                         <select class="form-control border-0" id="education_qualification" name="education_qualification">
                             <option value="#" disabled selected>Education Qualification</option>
                             @foreach ($education_qualifications as $education_qualification)
-                            <option value="{{ $education_qualification->id }}">{{ $education_qualification->qualification }}</option>
+                            <option value="{{ $education_qualification->id }}">{{ $education_qualification->id }}. {{ $education_qualification->qualification }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -43,7 +43,7 @@
                         <select class="form-control border-0" id="major" name="major">
                             <option value="#" disabled selected>Major</option>
                             @foreach ($majors as $major)
-                            <option value="{{ $major->id }}">{{ $major->major }}</option>
+                            <option value="{{ $major->id }}">{{ $major->id }}. {{ $major->major }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -52,7 +52,7 @@
                         <select class="form-control border-0" id="year_experience" name="year_experience">
                             <option value="#" disabled selected>Major</option>
                             @foreach ($year_experiences as $year_experience)
-                            <option value="{{ $year_experience->id }}">{{ $year_experience->experience_range }}</option>
+                            <option value="{{ $year_experience->id }}">{{ $year_experience->id }}. {{ $year_experience->experience_range }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -82,7 +82,7 @@
                         <select class="form-control border-0" id="major" name="languages">
                             <option value="#" disabled selected>Language</option>
                             @foreach ($languages as $language)
-                            <option value="{{ $language->id }}">{{ $language->language }}</option>
+                            <option value="{{ $language->id }}">{{ $language->id }}. {{ $language->language }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -91,7 +91,7 @@
                         <select class="form-control border-0" id="primary_language" name="primary_language">
                             <option value="#" disabled selected>Primary Language</option>
                             @foreach ($languages as $language)
-                            <option value="{{ $language->id }}">{{ $language->language }}</option>
+                            <option value="{{ $language->id }}">{{ $language->id }}. {{ $language->language }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -109,7 +109,7 @@
                         <select class="form-control border-0" id="specialization_1" name="specialization_1">
                             <option value="#" disabled selected>Specialization 1</option>
                             @foreach ($specializations as $specialization)
-                            <option value="{{ $specialization->id }}">{{ $specialization->name }}</option>
+                            <option value="{{ $specialization->id }}">{{ $specialization->id }}. {{ $specialization->name }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -118,7 +118,7 @@
                         <select class="form-control border-0" id="specialization_2" name="specialization_2">
                             <option value="#" disabled selected>Specialization 1</option>
                             @foreach ($specializations as $specialization)
-                            <option value="{{ $specialization->id }}">{{ $specialization->name }}</option>
+                            <option value="{{ $specialization->id }}">{{ $specialization->id }}. {{ $specialization->name }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -127,7 +127,7 @@
                         <select class="form-control border-0" id="specialization_3" name="specialization_3">
                             <option value="#" disabled selected>Specialization 3</option>
                             @foreach ($specializations as $specialization)
-                            <option value="{{ $specialization->id }}">{{ $specialization->name }}</option>
+                            <option value="{{ $specialization->id }}">{{ $specialization->id }}. {{ $specialization->name }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -136,7 +136,7 @@
                         <select class="form-control border-0" id="specialization_4" name="specialization_4">
                             <option value="#" disabled selected>Specialization 4</option>
                             @foreach ($specializations as $specialization)
-                            <option value="{{ $specialization->id }}">{{ $specialization->name }}</option>
+                            <option value="{{ $specialization->id }}">{{ $specialization->id }}. {{ $specialization->name }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -166,7 +166,7 @@
                         <select class="form-control border-0" id="preferred_working_hours" name="preferred_working_hours">
                             <option value="#" disabled selected>Preferred Working Hours</option>
                             @foreach ($preferred_working_hours as $preferred_working_hour)
-                            <option value="{{ $preferred_working_hour->id }}">{{ $preferred_working_hour->working_hour_range }}</option>
+                            <option value="{{ $preferred_working_hour->id }}">{{ $preferred_working_hour->id }}. {{ $preferred_working_hour->working_hour_range }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -175,7 +175,7 @@
                         <select class="form-control border-0" id="desired_field" name="desired_field">
                             <option value="#" disabled selected>Desire To Work</option>
                             @foreach ($desired_fields as $desired_field)
-                            <option value="{{ $preferred_working_hour->id }}">{{ $desired_field->field }}</option>
+                            <option value="{{ $preferred_working_hour->id }}">{{ $preferred_working_hour->id }}. {{ $desired_field->field }}</option>
                             @endforeach
                         </select>
                     </div>

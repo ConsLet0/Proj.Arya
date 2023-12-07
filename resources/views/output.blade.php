@@ -7,7 +7,7 @@
         <div class="row align-items-center py-5">
             @foreach ($matchedJobs as $job)
             <div class="col-md-6 ps-md-5">
-                <img src="{{asset('images/developer.png')}}" alt="image" class="img-fluid" />
+                <img src="{{asset('images/about-img.jpg')}}" alt="image" class="img-fluid" />
             </div>
             <div class="col-md-6 px-4 py-5">
                 <h6 class="">YOUR JOB IS</h6>
@@ -15,7 +15,7 @@
                 <p class="">
                     {{ $job->description }}
                 </p>
-                <a href="/" class="btn btn-primary service-btn mt-3">Back to homepage</a>
+                <a href="{{ $job->link }}" class="btn btn-primary service-btn mt-3">See Jobs Here</a>
             </div>
             @endforeach
         </div>
