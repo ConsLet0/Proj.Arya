@@ -116,7 +116,7 @@
                     <div class="mb-4">
                         <label for="specialization_2" class="form-label mb-0">Specialization 2</label>
                         <select class="form-control border-0" id="specialization_2" name="specialization_2">
-                            <option value="#" disabled selected>Specialization 1</option>
+                            <option value="#" disabled selected>Specialization 2</option>
                             @foreach ($specializations as $specialization)
                             <option value="{{ $specialization->id }}">{{ $specialization->id }}. {{ $specialization->name }}</option>
                             @endforeach
@@ -133,10 +133,10 @@
                     </div>
                     <div class="mb-4">
                         <label for="specialization_4" class="form-label mb-0">Specialization 4</label>
-                        <select class="form-control border-0" id="specialization_4" name="specialization_4">
+                        <select class="form-control border-0" id="specialization_4" name="specialization_2">
                             <option value="#" disabled selected>Specialization 4</option>
                             @foreach ($specializations as $specialization)
-                            <option value="{{ $specialization->id }}">{{ $specialization->name }}</option>
+                            <option value="{{ $specialization->id }}">{{ $specialization->id }}. {{ $specialization->name }}</option>
                             @endforeach
                         </select>
                     </div>
